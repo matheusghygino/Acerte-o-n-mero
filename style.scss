@@ -1,0 +1,52 @@
+@use 'variaveis';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    background-color: variaveis.$bg-color;
+    color: variaveis.$primary-color;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-top: 1.2rem;
+}
+
+.mensagem {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    .box {
+        border: 2px solid variaveis.$primary-color;
+        display: inline-block;
+        font-size: 4rem;
+        padding: 1rem;
+        margin: 1.2rem;
+    }
+}
+
+.btn__jogar {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    background-color: variaveis.$primary-color;
+    margin-top: 2rem;
+    font-size:1.2rem;
+    font-weight: 500;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(232, 249, 253, 0.8);
+    }
+}
